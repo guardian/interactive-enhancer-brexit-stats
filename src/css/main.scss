@@ -92,8 +92,9 @@ h2.gv-strap {
 }
 
 .diptych-half {
-    width: 50% !important;
+    width: calc(50% - 5px) !important;
     display: inline-block;
+    padding-right: 5px;
 
 }
 
@@ -112,6 +113,7 @@ h2.gv-strap {
 		margin-bottom: 0px;
     }
     > p {
+        margin-top: 0.5em;
         @include fs-textSans(2);
     	color: #767676;
     }
