@@ -35,8 +35,13 @@
     @media (min-width: map-get($mq-breakpoints, leftCol)) {
 	    @include fs-headline(5);
 
-	}
-            color: #fcee21;
+	   }
+
+     a {
+       color: #fcee21;
+       border-bottom: none;
+     }
+
         }
 
         & {
@@ -60,6 +65,11 @@ h2.gv-brexit-heading {
 	    @include fs-headline(5);
 	}
 
+  a {
+    text-decoration: none;
+    border-bottom: none;
+  }
+
 
 }
 
@@ -68,6 +78,7 @@ h2.gv-brexit-heading {
 h2.gv-strap {
     margin: 0;
 	max-width: 420px;
+  clear: both;
 	@include fs-textSans(4);
 	color: #000;
 	font-weight: bold;
@@ -77,7 +88,7 @@ h2.gv-strap {
 .gv-brexit-chart {
         margin-left: 0px !important;
 		width: 300px !important;
-		margin-right: 20px !important;	
+		margin-right: 20px !important;
 		float: left !important;
 
        @media (max-width: map-get($mq-breakpoints, tablet)) {
