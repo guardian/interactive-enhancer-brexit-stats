@@ -17,7 +17,6 @@
     margin-top: 2em;
     padding-top: 1em;
     background: #197caa;
-    color: #333;
     margin-left: -10px;
     padding-left: 10px;
     margin-right: -10px;
@@ -28,13 +27,14 @@
 //	    background-position: right;
 
         > h2 {
+                  color: #fcee21;
+ 
             margin: 0;
 	margin-bottom: 20px;
 	max-width: 420px;
 	@include fs-headline(4);
     @media (min-width: map-get($mq-breakpoints, leftCol)) {
 	    @include fs-headline(5);
-       color: #fcee21;
        border-bottom: none;
 
 	   }
@@ -53,6 +53,9 @@
         }
 
         p {
+            color: #fff;
+        }
+        p > a {
             color: #fff;
         }
 }
