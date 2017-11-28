@@ -107,16 +107,24 @@ h2.gv-strap {
     clear:both;
 }
 
-.diptych-half {
-    width: calc(50% - 5px) !important;
-    display: inline-block;
-    padding-right: 5px;
 
+.diptych-half {
+
+    @media (min-width: 414px) {
+
+        width: calc(50% - 5px) !important;
+        display: inline-block;
+        padding-right: 5px;
+    
+    }
 }
 
 .diptych-right {
-    float: right;
-    margin-top: 0px !important;
+    @media (min-width: 414px){
+        float: right;
+        margin-top: 0px !important;
+    }
+
 }
 
 .gv-footnote {
