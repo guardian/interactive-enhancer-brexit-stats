@@ -1,6 +1,8 @@
 @import "mq";
 @import "fonts";
 
+$accentbackground: #f6f6f6;
+
 // Uncomment for embeds
 //@import "embed";
 
@@ -16,7 +18,7 @@
 
     margin-top: 2em;
     padding-top: 1em;
-    background: #197caa;
+    background: $accentbackground;
     margin-left: -10px;
     padding-left: 10px;
     margin-right: -10px;
@@ -27,13 +29,13 @@
 //	    background-position: right;
 
 > figure {
-    background: #197caa !important;
+    background: $accentbackground !important;
     
 }
 
 
         > h2 {
-                  color: #fcee21;
+                  color: black;
  
             margin: 0;
 	margin-bottom: 20px;
@@ -46,7 +48,6 @@
 	   }
 
      a {
-       color: #fcee21;
        border-bottom: none;
      }
 
@@ -54,23 +55,23 @@
 
         & {
 		.js-graph header span{
-			color:#fff;
+			color:black;
 		}
         }
 
         p {
-            color: #fff;
+            color: black;
         }
         p > a {
-            color: #fff;
+            color: black;
         }
 }
 
 h2.gv-brexit-heading {
     margin: 0;
 	margin-bottom: 20px;
-	max-width: 420px;
-    color: #005689;
+    max-width: 420px;
+    font-weight: normal !important;
 	@include fs-headline(4);
     @media (min-width: map-get($mq-breakpoints, leftCol)) {
 	    @include fs-headline(5);
@@ -90,8 +91,8 @@ h2.gv-strap {
     margin: 0;
 	max-width: 420px;
   clear: both;
-	@include fs-textSans(4);
-	color: #000;
+	@include fs-bodyHeading(1);
+	color: #333;
 	font-weight: bold;
     border-bottom: 1px dotted #767676;
 }
