@@ -35,18 +35,12 @@ $accentbackground: #f6f6f6;
 
 
         > h2 {
-                  color: black;
- 
-            margin: 0;
-	margin-bottom: 20px;
-	max-width: 420px;
-	@include fs-headline(4);
-    @media (min-width: map-get($mq-breakpoints, leftCol)) {
-	    @include fs-headline(5);
-       border-bottom: none;
-
-	   }
-
+            font-family: "Guardian Egyptian Web", Georgia;
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: 200;
+            color: #333;
+            margin-bottom: 8px;
      a {
        border-bottom: none;
      }
@@ -71,12 +65,12 @@ h2.gv-brexit-heading {
     margin: 0;
 	margin-bottom: 20px;
     max-width: 420px;
-    font-weight: normal !important;
-	@include fs-headline(4);
-    @media (min-width: map-get($mq-breakpoints, leftCol)) {
-	    @include fs-headline(5);
-	}
-
+    font-family: "Guardian Egyptian Web", Georgia;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 200;
+    color: #333;
+    margin-bottom: 8px;
   a {
     text-decoration: none;
     border-bottom: none;
