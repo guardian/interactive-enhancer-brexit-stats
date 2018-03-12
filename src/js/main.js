@@ -13,11 +13,14 @@ s.href = '<%= path %>/main.css';
 parentdoc.head.appendChild(s);
 
 var supportingfigures = parentdoc.querySelectorAll('.element-interactive.element--supporting');
+var supportingembeds = parentdoc.querySelectorAll('.element-embed.element--supporting');
 var interactiveEls = parentdoc.querySelectorAll('.element-interactive');
+var embedEls = parentdoc.querySelectorAll('.element-embed');
+
 var headings = Array.from(parentdoc.querySelectorAll('.content__article-body h2, .article__body h2'));
 
-var supportingfiguresarray = Array.from(supportingfigures);
-var interactiveElsArray = Array.from(interactiveEls);
+var supportingfiguresarray = (Array.from(supportingfigures)).concat(Array.from(supportingembeds));
+var interactiveElsArray = (Array.from(interactiveEls)).concat(Array.from(embedEls));
 
 supportingfiguresarray.forEach(function (f) {
     f.classList.add('gv-brexit-chart')
