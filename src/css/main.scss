@@ -15,8 +15,8 @@ $accentbackground: #f6f6f6;
 //}
 
 .anotherthing {
-
-    margin-top: 2em;
+    overflow: auto;
+   margin-top: 2em;
     padding-top: 1em;
     background: $accentbackground;
     margin-left: -10px;
