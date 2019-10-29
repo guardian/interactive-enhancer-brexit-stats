@@ -111,6 +111,8 @@ h2.gv-strap {
 
 .diptych-half {
 
+    margin-bottom: 0.75rem !important;
+
     @media (min-width: 414px) {
 
         width: calc(50% - 5px) !important;
